@@ -37,6 +37,8 @@ window.util = util;
 
     doc.addEventListener('DOMContentLoaded', event => {
 
+        $('#index-contenedor').innerHTML = '<img class="responsive-img" src="./vista/images/tienda.png">';
+
         $('#index-menu').cargar('./vista/html/menu.html', (contenedor) => {
             let elementosMenu = $('#menu-principal');
             menuPrincipal = M.Sidenav.init(elementosMenu);
@@ -57,8 +59,8 @@ window.util = util;
     });
 
 
-    let elems = document.querySelectorAll('.collapsible');
-    let instances = M.Collapsible.init(elems, {});
+    //let elems = document.querySelectorAll('.collapsible');
+    //let instances = M.Collapsible.init(elems, {});
 
     //M.Collapsible.init($('.collapsible'), {});
 
